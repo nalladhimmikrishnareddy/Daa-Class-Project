@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Foodie Genie — Ingredients</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <main class="container">
+    
+    <!-- Top header -->
+    <header class="nav">
+      <div class="brand">
+        <div class="logo">FG</div>
+        <div>
+          <h1 style="margin:0;">Enter Ingredients</h1>
+          <p class="lead" style="margin:0;">What do you have in your kitchen?</p>
+        </div>
+      </div>
+      <div>
+        <a class="btn" href="{{ url_for('home') }}">Home</a>
+      </div>
+    </header>
+
+    <!-- Input form -->
+    <section class="hero" style="margin-top:20px;">
+      <form method="POST" action="{{ url_for('ingredients') }}">
+        <div class="input-row" style="display:flex; gap:10px;">
+          <input 
+            type="text" 
+            name="ingredients" 
+            placeholder="e.g., rice, garlic, tomato" 
+            required 
+            style="flex:1; padding:10px; border-radius:8px; border:1px solid #ddd;">
+          <button class="btn" type="submit">Find Recipes</button>
+        </div>
+      </form>
+      <p class="small" style="margin-top:12px; color:#6b7280;">
+        You can enter multiple items separated by commas. Try: 
+        <em>rice, garlic, butter</em>
+      </p>
+    </section>
+
+  </main>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Foodie Genie — Recipes</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Foodie Genie</div>
+    <ul>
+      <li><a href="{{ url_for('home') }}">Home</a></li>
+      <li><a href="{{ url_for('ingredients') }}">Ingredients</a></li>
+      <li><a href="{{ url_for('recipes') }}">Recipes</a></li>
+    </ul>
+    <div class="search-icon">&#128270;</div>
+  </nav>
+
+  <div class="layout">
+    <!-- Sidebar Filters -->
+    <aside class="sidebar">
+      <h2>Filter</h2>
+
+      <div>
+        <strong>Cuisine</strong>
+        <label><input type="checkbox" name="cuisine" value="Indian"> Indian</label>
+        <label><input type="checkbox" name="cuisine" value="Italian"> Italian</label>
+        <label><input type="checkbox" name="cuisine" value="Chinese"> Chinese</label>
+        <label><input type="checkbox" name="cuisine" value="Mediterranean"> Mediterranean</label>
+      </div>
+
+      <div>
+        <strong>Diet</strong>
+        <label><input type="checkbox" name="diet" value="Vegan"> Vegan</label>
+        <label><input type="checkbox" name="diet" value="Vegetarian"> Vegetarian</label>
+        <label><input type="checkbox" name="diet" value="Gluten-free"> Gluten-free</label>
+        <label><input type="checkbox" name="diet" value="Non-Vegetarian"> Non-Vegetarian</label>
+      </div>
+
+      <div>
+        <strong>Prep Time</strong>
+        <label><input type="checkbox" name="time" value="Under30"> Under 30 min</label>
+        <label><input type="checkbox" name="time" value="30to60"> 30–60 min</label>
+        <label><input type="checkbox" name="time" value="Over60"> Over 60 min</label>
+      </div>
+    </aside>
+
+    <!-- Recipes Grid -->
+    <section class="recipes-content">
+      <div class="results-count">
+        Showing {{ items|length }} of {{ total }} recipes
+      </div>
+
+      <div class="recipes-grid">
+        {% if items %}
+          {% for r in items %}
+            <article class="recipe-card" tabindex="0">
+              <div class="recipe-thumb">
+                <img src="https://source.unsplash.com/400x300/?{{ r.ingredients[0] if r.ingredients else 'food' }}"
+                     alt="{{ r.name }}">
+              </div>
+              <div class="recipe-content">
+                <div class="recipe-title">{{ r.name }}</div>
+                <div class="recipe-ingredients">
+                  {{ r.ingredients | join(', ') }}
+                </div>
+                <div class="recipe-meta">
+                  <span>{{ r.cuisine or "Various" }}</span>
+                  <span>{{ r.prep_time or "Unknown" }}</span>
+                  <span>{{ r.diet or "Any" }}</span>
+                </div>
+              </div>
+            </article>
+          {% endfor %}
+        {% else %}
+          <p>No recipes found with the selected filters.</p>
+        {% endif %}
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div>© 2025 Foodie Genie</div>
+    <div>
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Terms of Service</a> |
+      <a href="#">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>

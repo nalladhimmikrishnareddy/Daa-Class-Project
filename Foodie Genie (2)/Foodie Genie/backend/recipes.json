@@ -1,0 +1,147 @@
+[
+  {
+    "name": "Pasta with Tomato Sauce",
+    "ingredients": ["pasta", "tomato", "garlic"],
+    "steps": ["Boil pasta", "Make tomato sauce", "Mix and serve"]
+  },
+  {
+    "name": "Veggie Stir Fry",
+    "ingredients": ["broccoli", "carrot", "soy sauce"],
+    "steps": ["Chop vegetables", "Stir fry with soy sauce", "Serve hot"]
+  },
+  {
+    "name": "Garlic Butter Rice",
+    "ingredients": ["rice", "garlic", "butter"],
+    "steps": ["Cook rice", "Fry garlic in butter", "Mix and serve"]
+  },
+  {
+    "name": "Omelette",
+    "ingredients": ["egg", "milk", "salt", "pepper"],
+    "steps": ["Beat eggs with milk", "Cook in pan", "Season and serve"]
+  },
+  {
+    "name": "Chicken Curry",
+    "ingredients": ["chicken", "onion", "tomato", "garlic", "ginger", "spices"],
+    "steps": ["Cook onion & garlic", "Add chicken & spices", "Simmer with tomato"]
+  },
+  {
+    "name": "Paneer Butter Masala",
+    "ingredients": ["paneer", "tomato", "butter", "cream", "spices"],
+    "steps": ["Prepare tomato gravy", "Add paneer cubes", "Finish with butter & cream"]
+  },
+  {
+    "name": "Vegetable Biryani",
+    "ingredients": ["rice", "carrot", "peas", "beans", "spices"],
+    "steps": ["Cook rice", "Prepare spiced vegetables", "Layer & steam"]
+  },
+  {
+    "name": "Aloo Paratha",
+    "ingredients": ["wheat flour", "potato", "onion", "spices"],
+    "steps": ["Make dough", "Stuff with potato mix", "Cook on tawa with ghee"]
+  },
+  {
+    "name": "Chapati",
+    "ingredients": ["wheat flour", "salt", "water"],
+    "steps": ["Make dough", "Roll flat", "Cook on tawa"]
+  },
+  {
+    "name": "Dal Tadka",
+    "ingredients": ["lentils", "onion", "tomato", "garlic", "spices"],
+    "steps": ["Boil dal", "Prepare tadka", "Mix and serve"]
+  },
+  {
+    "name": "Idli",
+    "ingredients": ["idli batter"],
+    "steps": ["Pour into mold", "Steam until fluffy", "Serve with chutney"]
+  },
+  {
+    "name": "Sambar",
+    "ingredients": ["toor dal", "tamarind", "vegetables", "sambar powder"],
+    "steps": ["Cook dal & veggies", "Add tamarind", "Simmer with spices"]
+  },
+  {
+    "name": "Pav Bhaji",
+    "ingredients": ["pav bread", "potato", "tomato", "onion", "butter", "spices"],
+    "steps": ["Cook mashed veggies", "Add spices", "Serve with toasted pav"]
+  },
+  {
+    "name": "Poha",
+    "ingredients": ["flattened rice", "onion", "peanuts", "spices"],
+    "steps": ["Soak poha", "Fry with onion & peanuts", "Garnish with coriander"]
+  },
+  {
+    "name": "Rajma Chawal",
+    "ingredients": ["rajma beans", "rice", "onion", "tomato", "spices"],
+    "steps": ["Boil rajma", "Cook with onion-tomato gravy", "Serve with rice"]
+  },
+  {
+    "name": "Fish Fry",
+    "ingredients": ["fish", "spices", "oil"],
+    "steps": ["Marinate fish", "Shallow fry", "Serve with lemon"]
+  },
+  {
+    "name": "Mutton Curry",
+    "ingredients": ["mutton", "onion", "tomato", "spices"],
+    "steps": ["Cook onion & spices", "Add mutton", "Simmer until tender"]
+  },
+  {
+    "name": "Egg Curry",
+    "ingredients": ["egg", "onion", "tomato", "spices"],
+    "steps": ["Boil eggs", "Prepare curry base", "Add eggs to gravy"]
+  },
+  {
+    "name": "Palak Paneer",
+    "ingredients": ["spinach", "paneer", "onion", "tomato", "spices"],
+    "steps": ["Blanch spinach", "Make puree", "Add paneer cubes"]
+  },
+  {
+    "name": "Chole Bhature",
+    "ingredients": ["chickpeas", "onion", "tomato", "bhature dough", "spices"],
+    "steps": ["Cook chickpeas in gravy", "Fry bhature", "Serve together"]
+  },
+  {
+    "name": "Pizza Margherita",
+    "ingredients": ["pizza base", "tomato", "mozzarella", "basil"],
+    "steps": ["Spread sauce", "Add cheese & basil", "Bake"]
+  },
+  {
+    "name": "Burger",
+    "ingredients": ["bun", "patty", "lettuce", "tomato", "cheese"],
+    "steps": ["Assemble bun & fillings", "Serve with fries"]
+  },
+  {
+    "name": "French Fries",
+    "ingredients": ["potato", "oil", "salt"],
+    "steps": ["Cut potatoes", "Deep fry", "Sprinkle salt"]
+  },
+  {
+    "name": "Pancakes",
+    "ingredients": ["flour", "egg", "milk", "sugar"],
+    "steps": ["Mix batter", "Cook on pan", "Serve with syrup"]
+  },
+  {
+    "name": "Chocolate Cake",
+    "ingredients": ["flour", "cocoa powder", "egg", "sugar", "butter"],
+    "steps": ["Mix batter", "Bake", "Decorate"]
+  },
+  {
+    "name": "Ice Cream",
+    "ingredients": ["milk", "sugar", "flavor"],
+    "steps": ["Prepare base", "Freeze until set"]
+  },
+  {
+    "name": "Smoothie",
+    "ingredients": ["banana", "milk", "honey"],
+    "steps": ["Blend banana, milk, honey", "Serve chilled"]
+  },
+  {
+    "name": "Salad",
+    "ingredients": ["lettuce", "tomato", "cucumber", "olive oil"],
+    "steps": ["Chop veggies", "Mix with dressing"]
+  },
+  {
+    "name": "Soup",
+    "ingredients": ["vegetables", "salt", "pepper"],
+    "steps": ["Boil veggies", "Blend", "Serve hot"]
+  }
+]
